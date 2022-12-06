@@ -32,3 +32,9 @@ dependencies {
 ```
 
 ## 功能列表
+
+* ### 日期 相关 -> [DateUtils.kt][DateUtils.kt] -> [Demo][DateTest.demo]
+
+```
+formatDateToString              : 格式化日期时间戳为字符串
+```
