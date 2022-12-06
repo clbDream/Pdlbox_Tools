@@ -22,5 +22,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="日期格式化" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="日期格式化" />
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>
