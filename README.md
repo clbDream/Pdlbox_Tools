@@ -23,11 +23,11 @@ allprojects {
 	}
 ```
 
-2. Add the dependency
+2. Add the dependency(版本信息查看上面的标签里面)
 
 ```
 dependencies {
-	        implementation 'com.gitee.clbDream:pdl-box_tools:-SNAPSHOT'
+	        implementation 'com.gitee.clbDream:pdl-box_tools:$version'
 	}
 ```
 
