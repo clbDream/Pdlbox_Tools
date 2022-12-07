@@ -45,5 +45,19 @@ string2millis              : 日期字符串转换为时间戳
 
 ```
 millis2String              : 时间戳转换为时间字符串
-string2millis              : 日期字符串转换为时间戳
+string2millis              : 时间字符串转换为时间戳
+```
+
+* ### 时间 相关 -> ConversionUtils.kt
+
+```
+dp2px, px2dp               : dp 与 px 转换
+sp2px, px2sp               : sp 与 px 转换
+```
+
+* ### 时间 相关 -> SizeUtils.kt
+
+```
+dp2px, px2dp               : dp 与 px 转换
+sp2px, px2sp               : sp 与 px 转换
 ```

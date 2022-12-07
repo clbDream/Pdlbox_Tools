@@ -24,6 +24,7 @@
         </activity>
         <activity android:name=".DateTest" />
         <activity android:name=".TimeTest" />
+        <activity android:name=".ConversionTest" />
     </application>
 
 </manifest>

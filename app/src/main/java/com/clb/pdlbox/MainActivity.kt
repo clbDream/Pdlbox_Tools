@@ -18,4 +18,8 @@ class MainActivity : AppCompatActivity() {
     fun timeTest(view: View) {
         startActivity(Intent(this,TimeTest::class.java))
     }
+
+    fun conversionTest(view: View) {
+        startActivity(Intent(this,ConversionTest::class.java))
+    }
 }
