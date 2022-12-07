@@ -1,8 +1,9 @@
-# 潘多拉-工具库
+# 潘多拉-工具库(已加入反996工作制开源协议)
 
 开发一套纯粹的工具库
 
 [![](https://jitpack.io/v/com.gitee.clbDream/pdl-box_tools.svg)](https://jitpack.io/#com.gitee.clbDream/pdl-box_tools)
+[![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)
 
 ## 简介
 
