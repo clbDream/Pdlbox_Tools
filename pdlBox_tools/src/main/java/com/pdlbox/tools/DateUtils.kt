@@ -63,7 +63,7 @@ object DateUtils {
 
     /**
      * 格式化日期字符串为时间戳
-     * @param timeMillis 要格式化的时间字符串,(默认为yyyy/MM/dd)
+     * @param time 要格式化的时间字符串,(默认为yyyy/MM/dd)
      * @param pattern 格式化类型
      * @return 时间戳(毫秒值)
      */
@@ -73,13 +73,13 @@ object DateUtils {
 
     /**
      * 格式化日期字符串为时间戳
-     * @param timeMillis 要格式化的日期字符串
+     * @param time 要格式化的日期字符串
      * @param format The format
      * @return 时间戳(毫秒值)
      */
-    fun string2millis(time: String, pattern: SimpleDateFormat): Long {
+    fun string2millis(time: String, format: SimpleDateFormat): Long {
         return try {
-            pattern.parse(time)?.time ?: -1
+            format.parse(time)?.time ?: -1
         } catch (e: ParseException) {
             -1
         }

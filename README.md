@@ -33,8 +33,16 @@ dependencies {
 
 ## 功能列表
 
-* ### 日期 相关 -> [DateUtils.kt][DateUtils.kt] -> [Demo][DateTest.kt]
+* ### 日期 相关 -> DateUtils.kt
 
 ```
-formatDateToString              : 格式化日期时间戳为字符串
+millis2String              : 时间戳转换为日期字符串
+string2millis              : 日期字符串转换为时间戳
+```
+
+* ### 时间 相关 -> TimeUtils.kt
+
+```
+millis2String              : 时间戳转换为时间字符串
+string2millis              : 日期字符串转换为时间戳
 ```

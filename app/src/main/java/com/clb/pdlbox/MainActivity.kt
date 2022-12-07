@@ -14,4 +14,8 @@ class MainActivity : AppCompatActivity() {
     fun dateTest(view: View) {
         startActivity(Intent(this,DateTest::class.java))
     }
+
+    fun timeTest(view: View) {
+        startActivity(Intent(this,TimeTest::class.java))
+    }
 }
