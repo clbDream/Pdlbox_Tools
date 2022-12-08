@@ -20,6 +20,8 @@ class TimeTest : AppCompatActivity() {
     private lateinit var textView8: TextView
     private lateinit var textView9: TextView
     private lateinit var textView10: TextView
+    private lateinit var textView11: TextView
+    private lateinit var textView12: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,11 +40,18 @@ class TimeTest : AppCompatActivity() {
         textView7 = findViewById(R.id.textView7)
         textView8 = findViewById(R.id.textView8)
         textView9 = findViewById(R.id.textView9)
+        textView10 = findViewById(R.id.textView10)
+        textView11 = findViewById(R.id.textView11)
+        textView12 = findViewById(R.id.textView12)
         textView2.text = "\"2020/12/22 12:24:32\" -> ${
             TimeUtils.string2millis("2020/12/22 12:24:32",
                 TimeUtils.DATE_TYPE_2)
         }"
 
+        textView10.text = TimeUtils.longFormatTime(System.currentTimeMillis() - 1000 * 5)
+        textView11.text = TimeUtils.longFormatTime(System.currentTimeMillis() - 1000 * 60 * 2)
+        textView12.text =
+            TimeUtils.longFormatTime(System.currentTimeMillis() - 1000 * 60 * 60 * 24 * 30)
         mHandler.postDelayed(mRunnable, 1000L)
     }
 

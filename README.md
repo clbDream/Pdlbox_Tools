@@ -34,7 +34,8 @@ dependencies {
 	}
 ```
 
-## 功能列表
+## 功能列表()  
+可使用浏览器Ctrl+F快捷键利用关键字查找
 
 * ### 日期 相关 -> DateUtils.kt
 
@@ -46,8 +47,14 @@ string2millis              : 日期字符串转换为时间戳
 * ### 时间 相关 -> TimeUtils.kt
 
 ```
-millis2String              : 时间戳转换为时间字符串
-string2millis              : 时间字符串转换为时间戳
+millis2String               : 时间戳转换为时间字符串
+string2millis               : 时间字符串转换为时间戳
+longFormatTime              : 格式化时间戳为 几分钟前 本周 刚刚这种类型
+minutesAgo                  : 几分钟以前
+isToday                     : 是否是今天
+isYestYesterday             : 是否是去年
+isThisWeek                  : 是否是本周
+isThisYear                  : 是否是今年
 ```
 
 * ### 转换 相关 -> ConversionUtils.kt

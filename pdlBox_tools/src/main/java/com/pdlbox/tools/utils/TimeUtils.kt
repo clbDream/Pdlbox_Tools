@@ -5,6 +5,7 @@ import java.text.ParseException
 import java.text.SimpleDateFormat
 import java.util.*
 
+
 /**
  * 时间工具类
  */
@@ -83,5 +84,110 @@ object TimeUtils {
         } catch (e: ParseException) {
             -1
         }
+    }
+
+    /**
+     * 格式化时间戳为 几分钟前 本周 刚刚这种类型
+     */
+    fun longFormatTime(time: Long): String? {
+//        var time = time
+//        time = time * 1000
+        //SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        //转换为日期
+        val date = Date()
+        date.time = time
+        return if (isThisYear(date)) { //今年
+            val simpleDateFormat = SimpleDateFormat("HH:mm")
+            if (isToday(date)) { //今天
+                val minute: Int = minutesAgo(time)
+                if (minute < 60) { //1小时之内
+                    if (minute <= 1) { //一分钟之内，显示刚刚
+                        "刚刚"
+                    } else {
+                        minute.toString() + "分钟前"
+                    }
+                } else {
+                    simpleDateFormat.format(date)
+                }
+            } else {
+                if (isYestYesterday(date)) { //昨天，显示昨天
+                    "昨天 " + simpleDateFormat.format(date)
+                } else if (isThisWeek(date)) { //本周,显示周几
+                    var weekday: String? = null
+                    if (date.day === 1) {
+                        weekday = "周一"
+                    }
+                    if (date.day === 2) {
+                        weekday = "周二"
+                    }
+                    if (date.day === 3) {
+                        weekday = "周三"
+                    }
+                    if (date.day === 4) {
+                        weekday = "周四"
+                    }
+                    if (date.day === 5) {
+                        weekday = "周五"
+                    }
+                    if (date.day === 6) {
+                        weekday = "周六"
+                    }
+                    if (date.day === 0) {
+                        weekday = "周日"
+                    }
+                    weekday + " " + simpleDateFormat.format(date)
+                } else {
+                    val sdf = SimpleDateFormat("MM-dd HH:mm")
+                    sdf.format(date)
+                }
+            }
+        } else {
+            val sdf = SimpleDateFormat("yyyy-MM-dd HH:mm")
+            sdf.format(date)
+        }
+    }
+
+    /**
+     * 几分钟以前
+     */
+    private fun minutesAgo(time: Long): Int {
+        return ((System.currentTimeMillis() - time) / 60000).toInt()
+    }
+
+    /**
+     * 是否是今天
+     */
+    fun isToday(date: Date): Boolean {
+        val now = Date()
+        return date.year == now.year && date.month == now.month && date.date == now.date
+    }
+
+    /**
+     * 是否是去年
+     */
+    private fun isYestYesterday(date: Date): Boolean {
+        val now = Date()
+        return date.year == now.year && date.month == now.month && date.date + 1 == now.date
+    }
+
+    /**
+     * 是否是本周
+     */
+    private fun isThisWeek(date: Date): Boolean {
+        val now = Date()
+        if (date.year == now.year && date.month == now.month) {
+            if (now.day - date.day < now.day && now.date - date.date > 0 && now.date - date.date < 7) {
+                return true
+            }
+        }
+        return false
+    }
+
+    /**
+     * 是否是今年
+     */
+    private fun isThisYear(date: Date): Boolean {
+        val now = Date()
+        return date.year == now.year
     }
 }
