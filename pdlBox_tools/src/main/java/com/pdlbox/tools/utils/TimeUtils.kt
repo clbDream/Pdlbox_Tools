@@ -1,22 +1,22 @@
-package com.pdlbox.tools
+package com.pdlbox.tools.utils
 
 import android.annotation.SuppressLint
 import java.text.ParseException
 import java.text.SimpleDateFormat
 import java.util.*
 
-
 /**
- * 日期工具类
+ * 时间工具类
  */
-object DateUtils {
-
-    const val DATE_TYPE_1 = "yyyy年MM月dd日"
-    const val DATE_TYPE_2 = "yyyy/MM/dd"
-    const val DATE_TYPE_3 = "yyyy.MM.dd"
-    const val DATE_TYPE_4 = "MM.dd"
-    const val DATE_TYPE_5 = "MM月dd日"
-    const val DATE_TYPE_6 = "MM/dd"
+object TimeUtils {
+    const val DATE_TYPE_1 = "yyyy年MM月dd日 hh时mm分ss秒"
+    const val DATE_TYPE_2 = "yyyy/MM/dd hh:mm:ss"
+    const val DATE_TYPE_3 = "yyyy.MM.dd hh:mm:ss"
+    const val DATE_TYPE_4 = "hh:mm:ss"
+    const val DATE_TYPE_5 = "hh时mm分ss秒"
+    const val DATE_TYPE_6 = "hh时mm分"
+    const val DATE_TYPE_7 = "hh:mm"
+    const val DATE_TYPE_8 = "hh.mm"
 
     private val SDF_THREAD_LOCAL: ThreadLocal<HashMap<String, SimpleDateFormat>> =
         object : ThreadLocal<HashMap<String, SimpleDateFormat>>() {
@@ -84,5 +84,4 @@ object DateUtils {
             -1
         }
     }
-
 }

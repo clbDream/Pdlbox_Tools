@@ -57,9 +57,34 @@ dp2px, px2dp               : dp 与 px 转换
 sp2px, px2sp               : sp 与 px 转换
 ```
 
+* ### 字符串 相关 -> StringUtils.kt
+
+```
+isEmpty                    : 判断内容是否为空
+isBlank                    : 判断内容是否为空或空格
+equalsIgnoreCase           : 判断str1和str2是否相同(不区分大小写)
+contains                   : 判断字符串str1是否包含字符串str2
+```
+
 * ### 尺寸 相关 -> SizeUtils.kt
 
 ```
 dp2px, px2dp               : dp 与 px 转换
 sp2px, px2sp               : sp 与 px 转换
+```
+
+* ### 正则匹配 相关 -> RegexUtils.kt
+
+```
+isMatch                    : 判断是否匹配正则
+isPhoneNumberStrict        : 验证是否是手机号(严格)
+isPhoneNumberSimple        : 验证是否是手机号(宽松)
+isLegalName                : 验证输入的名字是否为“中文”或者是否包含“·”
+isLegalId                  : 验证是否是身份证号
+isEmail                    : 验证是否是邮箱
+matchChinese               : 判断是不是中文
+isTime                     : 判断是不是时间
+isIpV4                     : 判断是不是ipv4
+isDate                     : 判断是不是日期
+isCarNumber                : 判断是否是车牌号
 ```

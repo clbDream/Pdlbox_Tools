@@ -3,7 +3,7 @@ package com.clb.pdlbox
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.pdlbox.tools.DateUtils
+import com.pdlbox.tools.utils.DateUtils
 
 /**
  * 日期工具测试类

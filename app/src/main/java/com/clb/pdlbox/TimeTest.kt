@@ -4,8 +4,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.pdlbox.tools.TimeUtils
-import java.util.*
+import com.pdlbox.tools.utils.TimeUtils
 
 /**
  * 时间工具测试类
