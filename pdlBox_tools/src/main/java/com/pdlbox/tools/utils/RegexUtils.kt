@@ -43,7 +43,7 @@ object RegexUtils {
      * 验证是否是身份证号
      */
     fun isLegalId(input: String): Boolean {
-        return isMatch("(^\\\\d{15}\$)|(^\\\\d{17}([0-9]|X)\$)", input)
+        return isMatch("\\d{17}[0-9Xx]|\\d{15}", input)
     }
 
     /**

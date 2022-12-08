@@ -73,7 +73,7 @@ dp2px, px2dp               : dp 与 px 转换
 sp2px, px2sp               : sp 与 px 转换
 ```
 
-* ### 正则匹配 相关 -> RegexUtils.kt
+* ### 正则匹配 相关 -> RegexUtils.kt(部分正则会随着后续政策改变会不适用,建议正则判断以后端匹配为准)
 
 ```
 isMatch                    : 判断是否匹配正则
