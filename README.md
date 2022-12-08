@@ -13,6 +13,11 @@
 
 我也是个萌新程序员,项目有什么地方不足,请多多指教,哈哈
 
+#### 作者的其他开源项目
+
+* 多功能记录项目<事迹>：[RecordThings-Android](https://github.com/clbDream/RecordThings-Android) ![](https://img.shields.io/github/stars/clbDream/RecordThings-Android.svg) ![](https://img.shields.io/github/forks/clbDream/RecordThings-Android.svg)
+
+
 ## 如何使用
 
 1. Add the JitPack repository to your build file
