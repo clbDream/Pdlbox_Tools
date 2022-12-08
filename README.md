@@ -5,6 +5,8 @@
 [![](https://jitpack.io/v/com.gitee.clbDream/pdl-box_tools.svg)](https://jitpack.io/#com.gitee.clbDream/pdl-box_tools)
 [![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
 
+![](images/banner.png)
+
 ## 简介
 
 这是一个Android开发工具库系列开源项目,不包含任何隐私信息的搜集,完全可以通过国内应用市场隐私合规的检测,现在开源,供广大Android开发程序员同胞使用,欢迎大家一起来进行维护
@@ -48,14 +50,14 @@ millis2String              : 时间戳转换为时间字符串
 string2millis              : 时间字符串转换为时间戳
 ```
 
-* ### 时间 相关 -> ConversionUtils.kt
+* ### 转换 相关 -> ConversionUtils.kt
 
 ```
 dp2px, px2dp               : dp 与 px 转换
 sp2px, px2sp               : sp 与 px 转换
 ```
 
-* ### 时间 相关 -> SizeUtils.kt
+* ### 尺寸 相关 -> SizeUtils.kt
 
 ```
 dp2px, px2dp               : dp 与 px 转换
