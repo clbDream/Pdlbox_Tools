@@ -15,8 +15,8 @@
 
 #### 作者的其他开源项目
 
-* 多功能记录项目<事迹>：[RecordThings-Android](https://github.com/clbDream/RecordThings-Android) ![](https://img.shields.io/github/stars/clbDream/RecordThings-Android.svg) ![](https://img.shields.io/github/forks/clbDream/RecordThings-Android.svg)
-
+* 多功能记录项目<事迹>
+  ：[RecordThings-Android](https://github.com/clbDream/RecordThings-Android) ![](https://img.shields.io/github/stars/clbDream/RecordThings-Android.svg) ![](https://img.shields.io/github/forks/clbDream/RecordThings-Android.svg)
 
 ## 如何使用
 
@@ -39,7 +39,8 @@ dependencies {
 	}
 ```
 
-## 功能列表()  
+## 功能列表()
+
 可使用浏览器Ctrl+F快捷键利用关键字查找
 
 * ### 日期 相关 -> DateUtils.kt
@@ -99,4 +100,17 @@ isTime                     : 判断是不是时间
 isIpV4                     : 判断是不是ipv4
 isDate                     : 判断是不是日期
 isCarNumber                : 判断是否是车牌号
+```
+
+* ### 距离 相关 -> DistanceUtils.kt
+
+```
+mmToCm                       : 毫米转厘米
+cmToMm                       : 厘米转毫米
+cmToDecimeter                : 厘米转分米
+decimeterToCm                : 分米转厘米
+decimeterToM                 : 分米转米
+mToDecimeter                 : 米转分米
+metersToKilometers           : 米转千米
+kilometerToMeter             : 千米转米
 ```
