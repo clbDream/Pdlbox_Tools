@@ -17,6 +17,8 @@
 
 * 多功能记录项目<事迹>
   ：[RecordThings-Android](https://github.com/clbDream/RecordThings-Android) ![](https://img.shields.io/github/stars/clbDream/RecordThings-Android.svg) ![](https://img.shields.io/github/forks/clbDream/RecordThings-Android.svg)
+* 常用第三方库集合<库多多>
+  ：[Pdlbox_Library](https://github.com/clbDream/Pdlbox_Library) ![](https://img.shields.io/github/stars/clbDream/Pdlbox_Library.svg) ![](https://img.shields.io/github/forks/clbDream/Pdlbox_Library.svg)
 
 ## 如何使用
 
@@ -157,4 +159,14 @@ sDCardPath                   : 获取SD卡路径
 sDCardAllSize                : 获取SD卡的剩余容量 单位byte
 getFreeBytes                 : 获取指定路径所在空间的剩余可用容量字节数，单位byte
 rootDirectoryPath            : 获取系统存储路径
+```
+
+* ### 获得屏幕相关的辅助类 相关 -> ScreenUtils.kt
+
+```
+getScreenWidth               : 获得屏幕宽度
+getScreenHeight              : 获得屏幕高度
+getStatusHeight              : 获得状态栏的高度 
+snapShotWithStatusBar        : 获取当前屏幕截图，包含状态栏
+snapShotWithoutStatusBar     : 获取当前屏幕截图，不包含状态栏
 ```
