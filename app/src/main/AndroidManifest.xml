@@ -26,6 +26,7 @@
         <activity android:name=".TimeTest" />
         <activity android:name=".ConversionTest" />
         <activity android:name=".ToastTest" />
+        <activity android:name=".SpTest" />
     </application>
 
 </manifest>

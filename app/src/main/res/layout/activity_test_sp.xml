@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="文件名" />
+
+        <EditText
+            android:id="@+id/et_1"
+            android:paddingHorizontal="10dp"
+            android:textSize="12sp"
+            android:hint="输入文件名"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="key名" />
+
+        <EditText
+            android:id="@+id/et_2"
+            android:paddingHorizontal="10dp"
+            android:textSize="12sp"
+            android:hint="输入key名"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="key值" />
+
+        <EditText
+            android:id="@+id/et_3"
+            android:paddingHorizontal="10dp"
+            android:textSize="12sp"
+            android:hint="输入key值"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:onClick="saveValue"
+        android:text="存储(输入文件名  Key名 key值)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="文件名" />
+
+        <EditText
+            android:id="@+id/et_4"
+            android:paddingHorizontal="10dp"
+            android:textSize="12sp"
+            android:hint="输入文件名"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="key名" />
+
+        <EditText
+            android:id="@+id/et_5"
+            android:paddingHorizontal="10dp"
+            android:textSize="12sp"
+            android:hint="输入key名"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="key值" />
+
+        <EditText
+            android:id="@+id/et_6"
+            android:paddingHorizontal="10dp"
+            android:textSize="12sp"
+            android:hint="输入key值"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:onClick="getValue"
+        android:text="获取(输入文件名  Key名)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="文件名" />
+
+        <EditText
+            android:id="@+id/et_7"
+            android:paddingHorizontal="10dp"
+            android:textSize="12sp"
+            android:hint="输入文件名"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="key名" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/et_5"-->
+<!--            android:paddingHorizontal="10dp"-->
+<!--            android:textSize="12sp"-->
+<!--            android:hint="输入key名"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="key值" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/et_6"-->
+<!--            android:paddingHorizontal="10dp"-->
+<!--            android:textSize="12sp"-->
+<!--            android:hint="输入key值"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content" />-->
+    </LinearLayout>
+
+    <Button
+        android:onClick="clean"
+        android:text="清空指定文件"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

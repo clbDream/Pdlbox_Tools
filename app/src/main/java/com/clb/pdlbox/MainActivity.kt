@@ -26,4 +26,8 @@ class MainActivity : AppCompatActivity() {
     fun toastTest(view: View) {
         startActivity(Intent(this,ToastTest::class.java))
     }
+
+    fun spTest(view: View) {
+        startActivity(Intent(this,SpTest::class.java))
+    }
 }

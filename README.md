@@ -132,3 +132,17 @@ kilometerToMeter             : 千米转米
 showShort                    : 显示短期Toast
 showLong                     : 显示长期Toast
 ```
+
+* ### Sp存储 相关 -> SpUtils.kt
+```
+put                          : 存储数据
+getString                    : 获取字符串
+getBoolean                   : 获取布尔值
+getFloat                     : 获取浮点值
+getInt                       : 获取整型值
+getLong                      : 获取Long值
+remove                       : 删除某个文件中指定key的值
+clear                        : 清空某个文件
+contains                     : 查询某个key是否存在
+getAll                       : 获取所有的键值对
+```
