@@ -170,3 +170,25 @@ getStatusHeight              : 获得状态栏的高度
 snapShotWithStatusBar        : 获取当前屏幕截图，包含状态栏
 snapShotWithoutStatusBar     : 获取当前屏幕截图，不包含状态栏
 ```
+
+* ### App相关工具类 相关 -> AppUtils.kt
+
+```
+getAppName                  : 获取应用程序名称
+getVersionName              : 当前应用的版本名称
+```
+
+* ### 软键盘 相关 -> KeyBoardUtils.kt
+
+```
+openKeybord                 : 打开软键盘
+closeKeybord                : 关闭软键盘
+```
+
+* ### 网络相关 相关 -> NetUtils.kt
+
+```
+isConnected                 : 判断网络是否连接
+isWifi                      : 判断是否是wifi连接
+openSetting                 : 打开网络设置界面
+```

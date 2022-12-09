@@ -76,9 +76,4 @@ object SDCardUtils {
         get() {
             return Environment.getRootDirectory().absolutePath
         }
-
-    init {
-        /* cannot be instantiated */
-        throw UnsupportedOperationException("cannot be instantiated")
-    }
 }  
