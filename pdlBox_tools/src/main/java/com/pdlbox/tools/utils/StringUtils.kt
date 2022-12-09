@@ -1,5 +1,8 @@
 package com.pdlbox.tools.utils
 
+import java.util.*
+
+
 /**
  * 字符串工具类
  */
@@ -39,5 +42,53 @@ object StringUtils {
      */
     fun contains(str1: String?, str2: String?): Boolean {
         return str1 != null && str1.contains(str2!!)
+    }
+
+    /**
+     * 将给定字符串中给定的区域的字符转换成小写
+     *
+     * @param str 给定字符串中
+     * @param beginIndex 开始索引（包括）
+     * @param endIndex 结束索引（不包括）
+     * @return 新的字符串
+     */
+    fun toLowerCase(str: String, beginIndex: Int, endIndex: Int): String? {
+        return str.replaceFirst(str.substring(beginIndex, endIndex).toRegex(),
+            str.substring(beginIndex, endIndex)
+                .lowercase(Locale.getDefault()))
+    }
+
+    /**
+     * 将给定字符串中给定的区域的字符转换成大写
+     *
+     * @param str 给定字符串中
+     * @param beginIndex 开始索引（包括）
+     * @param endIndex 结束索引（不包括）
+     * @return 新的字符串
+     */
+    fun toUpperCase(str: String, beginIndex: Int, endIndex: Int): String? {
+        return str.replaceFirst(str.substring(beginIndex, endIndex).toRegex(),
+            str.substring(beginIndex, endIndex)
+                .uppercase(Locale.getDefault()))
+    }
+
+    /**
+     * 将给定字符串的首字母转为小写
+     *
+     * @param str 给定字符串
+     * @return 新的字符串
+     */
+    fun firstLetterToLowerCase(str: String): String? {
+        return toLowerCase(str, 0, 1)
+    }
+
+    /**
+     * 将给定字符串的首字母转为大写
+     *
+     * @param str 给定字符串
+     * @return 新的字符串
+     */
+    fun firstLetterToUpperCase(str: String): String? {
+        return toUpperCase(str, 0, 1)
     }
 }

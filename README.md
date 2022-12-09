@@ -41,7 +41,7 @@ dependencies {
 	}
 ```
 
-## 功能列表()
+## 功能列表
 
 可使用浏览器Ctrl+F快捷键利用关键字查找
 
@@ -54,8 +54,6 @@ d                         : 输出日志
 e                         : 输出日志
 v                         : 输出日志
 ```
-
-* ### 时间 相关 -> TimeUtils.kt
 
 * ### 日期 相关 -> DateUtils.kt
 
@@ -91,6 +89,10 @@ isEmpty                    : 判断内容是否为空
 isBlank                    : 判断内容是否为空或空格
 equalsIgnoreCase           : 判断str1和str2是否相同(不区分大小写)
 contains                   : 判断字符串str1是否包含字符串str2
+toLowerCase                : 将给定字符串中给定的区域的字符转换成小写
+toUpperCase                : 将给定字符串中给定的区域的字符转换成大写
+firstLetterToLowerCase     : 将给定字符串的首字母转为小写
+firstLetterToUpperCase     : 将给定字符串的首字母转为大写
 ```
 
 * ### 尺寸 相关 -> SizeUtils.kt
