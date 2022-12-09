@@ -43,6 +43,18 @@ dependencies {
 
 可使用浏览器Ctrl+F快捷键利用关键字查找
 
+* ### 日志 相关 -> LogUtils.kt
+
+```
+setNeedLog                : 是否打印日志
+i                         : 输出日志
+d                         : 输出日志
+e                         : 输出日志
+v                         : 输出日志
+```
+
+* ### 时间 相关 -> TimeUtils.kt
+
 * ### 日期 相关 -> DateUtils.kt
 
 ```
