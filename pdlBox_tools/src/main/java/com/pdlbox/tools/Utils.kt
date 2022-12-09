@@ -26,7 +26,11 @@ object Utils {
         }
         if (sApp?.equals(app)==true) return
         UtilsBridge.unInit(sApp!!);
-        sApp = app;
+        sApp = app
         UtilsBridge.init(sApp!!)
+    }
+
+    fun getApp(): Application {
+        return sApp!!
     }
 }

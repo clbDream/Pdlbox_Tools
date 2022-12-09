@@ -22,4 +22,8 @@ class MainActivity : AppCompatActivity() {
     fun conversionTest(view: View) {
         startActivity(Intent(this,ConversionTest::class.java))
     }
+
+    fun toastTest(view: View) {
+        startActivity(Intent(this,ToastTest::class.java))
+    }
 }

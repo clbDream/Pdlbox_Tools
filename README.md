@@ -126,3 +126,9 @@ mToDecimeter                 : 米转分米
 metersToKilometers           : 米转千米
 kilometerToMeter             : 千米转米
 ```
+
+* ### Toast 相关 -> ToastUtils.kt
+```
+showShort                    : 显示短期Toast
+showLong                     : 显示长期Toast
+```
