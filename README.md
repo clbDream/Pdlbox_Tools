@@ -128,12 +128,14 @@ kilometerToMeter             : 千米转米
 ```
 
 * ### Toast 相关 -> ToastUtils.kt
+
 ```
 showShort                    : 显示短期Toast
 showLong                     : 显示长期Toast
 ```
 
 * ### Sp存储 相关 -> SpUtils.kt
+
 ```
 put                          : 存储数据
 getString                    : 获取字符串
@@ -145,4 +147,14 @@ remove                       : 删除某个文件中指定key的值
 clear                        : 清空某个文件
 contains                     : 查询某个key是否存在
 getAll                       : 获取所有的键值对
+```
+
+* ### SD卡相关的辅助类 相关 -> SDCardUtils.kt
+
+```
+isSDCardEnable               : 判断SDCard是否可用
+sDCardPath                   : 获取SD卡路径
+sDCardAllSize                : 获取SD卡的剩余容量 单位byte
+getFreeBytes                 : 获取指定路径所在空间的剩余可用容量字节数，单位byte
+rootDirectoryPath            : 获取系统存储路径
 ```
