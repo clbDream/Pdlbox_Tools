@@ -178,6 +178,7 @@ snapShotWithoutStatusBar     : 获取当前屏幕截图，不包含状态栏
 ```
 getAppName                  : 获取应用程序名称
 getVersionName              : 当前应用的版本名称
+getPackageName              : 当前应用的包名
 ```
 
 * ### 软键盘 相关 -> KeyBoardUtils.kt

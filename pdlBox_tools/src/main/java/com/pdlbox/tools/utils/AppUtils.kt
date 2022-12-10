@@ -44,4 +44,22 @@ object AppUtils {
         }
         return null
     }
+    /**
+     * [获取应用程序包名]
+     *
+     * @param context
+     * @return 当前应用的版本名称
+     */
+    fun getPackageName(context: Context): String? {
+        try {
+            val packageManager: PackageManager = context.getPackageManager()
+            val packageInfo: PackageInfo = packageManager.getPackageInfo(
+                context.getPackageName(), 0)
+            return packageInfo.packageName
+        } catch (e: NameNotFoundException) {
+            e.printStackTrace()
+        }
+        return null
+    }
+
 }
