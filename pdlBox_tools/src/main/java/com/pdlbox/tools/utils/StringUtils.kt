@@ -11,14 +11,14 @@ object StringUtils {
     /**
      * 判断内容是否为空
      */
-    fun isEmpty(content:String?): Boolean {
+    fun isEmpty(content: String?): Boolean {
         return content.isNullOrEmpty()
     }
 
     /**
      * 判断内容是否为空格或空
      */
-    fun isBlank(content:String?): Boolean {
+    fun isBlank(content: String?): Boolean {
         return content.isNullOrBlank()
     }
 
@@ -90,5 +90,16 @@ object StringUtils {
      */
     fun firstLetterToUpperCase(str: String): String? {
         return toUpperCase(str, 0, 1)
+    }
+
+    /**
+     * 替换字符串中指定字符
+     * @param str 原字符串
+     * @param oldStr 被替换的字符串
+     * @param newStr 要替换的字符串
+     * @return 替换后的字符串
+     */
+    fun replace(str: String, oldStr:String,newStr: String): String {
+        return str.replace(oldStr,newStr)
     }
 }

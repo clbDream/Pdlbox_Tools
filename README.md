@@ -93,6 +93,7 @@ toLowerCase                : 将给定字符串中给定的区域的字符转换
 toUpperCase                : 将给定字符串中给定的区域的字符转换成大写
 firstLetterToLowerCase     : 将给定字符串的首字母转为小写
 firstLetterToUpperCase     : 将给定字符串的首字母转为大写
+replace                    : 替换字符串中指定字符
 ```
 
 * ### 尺寸 相关 -> SizeUtils.kt
