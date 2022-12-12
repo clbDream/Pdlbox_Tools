@@ -3,6 +3,7 @@ package com.pdlbox.tools.utils
 import android.annotation.SuppressLint
 import java.text.ParseException
 import java.text.SimpleDateFormat
+import java.time.Year
 import java.util.*
 
 
@@ -165,7 +166,7 @@ object TimeUtils {
     /**
      * 是否是去年
      */
-    private fun isYestYesterday(date: Date): Boolean {
+    fun isYestYesterday(date: Date): Boolean {
         val now = Date()
         return date.year == now.year && date.month == now.month && date.date + 1 == now.date
     }
@@ -173,7 +174,7 @@ object TimeUtils {
     /**
      * 是否是本周
      */
-    private fun isThisWeek(date: Date): Boolean {
+    fun isThisWeek(date: Date): Boolean {
         val now = Date()
         if (date.year == now.year && date.month == now.month) {
             if (now.day - date.day < now.day && now.date - date.date > 0 && now.date - date.date < 7) {
@@ -186,8 +187,15 @@ object TimeUtils {
     /**
      * 是否是今年
      */
-    private fun isThisYear(date: Date): Boolean {
+    fun isThisYear(date: Date): Boolean {
         val now = Date()
         return date.year == now.year
+    }
+
+    /**
+     * 判断是否是闰年
+     */
+    fun isItALeapYear(year: Int): Boolean {
+        return year % 4 == 0 && year % 100 != 0 || year % 400 == 0
     }
 }
