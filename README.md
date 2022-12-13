@@ -196,3 +196,19 @@ isConnected                 : 判断网络是否连接
 isWifi                      : 判断是否是wifi连接
 openSetting                 : 打开网络设置界面
 ```
+
+* ### 设备信息 相关 -> DeviceUtils.kt
+
+```
+isDeviceRooted              : 判断设备是否 rooted
+isAdbEnabled                : 判断设备 ADB 是否可用
+getSDKVersionName           : 获取设备系统版本号
+getSDKVersionCode           : 获取设备系统版本码
+getAndroidID                : 获取设备 AndroidID
+getManufacturer             : 获取设备厂商
+getModel                    : 获取设备型号
+getABIs                     : 获取设备 ABIs
+isTablet                    : 判断是否是平板
+isEmulator                  : 判断是否是模拟器
+wifiEnabled                 : 判断wifi是否可用
+```
