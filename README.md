@@ -212,3 +212,11 @@ isTablet                    : 判断是否是平板
 isEmulator                  : 判断是否是模拟器
 wifiEnabled                 : 判断wifi是否可用
 ```
+
+* ### 剪切板 相关 -> ClipboardUtils.kt
+
+```
+copyText                    : 复制文本到剪切板
+getText                     : 获取剪切板本文
+clear                       : 清除剪切板内容
+```

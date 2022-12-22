@@ -34,4 +34,8 @@ class MainActivity : AppCompatActivity() {
     fun deviceTest(view: View) {
         startActivity(Intent(this, DeviceTest::class.java))
     }
+
+    fun clipBoardTest(view: View) {
+        startActivity(Intent(this, ClipBoardTest::class.java))
+    }
 }
