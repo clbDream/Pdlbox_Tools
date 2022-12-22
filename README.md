@@ -227,3 +227,11 @@ clear                       : 清除剪切板内容
 getPingYin                  : 将字符串中的中文转化为拼音,其他字符不变
 getFirstSpell               : 汉字转换为汉语拼音首字母，英文字符不变
 ```
+
+* ### Gson 相关 -> GsonUtils.kt
+
+```
+getGson                     : 获取Gson对象
+toJson                      : 对象转json字符串
+fromJson                    : json字符串转对象
+```

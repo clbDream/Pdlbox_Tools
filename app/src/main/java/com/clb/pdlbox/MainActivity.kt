@@ -4,6 +4,9 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import com.google.gson.Gson
+import com.pdlbox.tools.utils.GsonUtils
+import com.pdlbox.tools.utils.LogUtils
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -38,4 +41,5 @@ class MainActivity : AppCompatActivity() {
     fun clipBoardTest(view: View) {
         startActivity(Intent(this, ClipBoardTest::class.java))
     }
+
 }

@@ -39,4 +39,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     // https://mvnrepository.com/artifact/com.belerweb/pinyin4j
     implementation group: 'com.belerweb', name: 'pinyin4j', version: '2.5.1'
+
+    // https://mvnrepository.com/artifact/com.google.code.gson/gson
+    api 'com.google.code.gson:gson:2.10'
 }
