@@ -220,3 +220,10 @@ copyText                    : 复制文本到剪切板
 getText                     : 获取剪切板本文
 clear                       : 清除剪切板内容
 ```
+
+* ### 拼音 相关 -> PinyinUtils.kt
+
+```
+getPingYin                  : 将字符串中的中文转化为拼音,其他字符不变
+getFirstSpell               : 汉字转换为汉语拼音首字母，英文字符不变
+```
