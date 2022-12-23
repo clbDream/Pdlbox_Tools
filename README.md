@@ -172,6 +172,9 @@ getScreenHeight              : 获得屏幕高度
 getStatusHeight              : 获得状态栏的高度 
 snapShotWithStatusBar        : 获取当前屏幕截图，包含状态栏
 snapShotWithoutStatusBar     : 获取当前屏幕截图，不包含状态栏
+getScreenOrientation         : 获取屏幕方向
+isLandscape                  : 屏幕是否是横向
+isPortrait                   : 屏幕是否是竖向
 ```
 
 * ### App相关工具类 相关 -> AppUtils.kt

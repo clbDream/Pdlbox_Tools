@@ -2,10 +2,13 @@ package com.pdlbox.tools.utils
 
 import android.app.Activity
 import android.content.Context
+import android.content.res.Configuration.ORIENTATION_LANDSCAPE
+import android.content.res.Configuration.ORIENTATION_PORTRAIT
 import android.graphics.Bitmap
 import android.graphics.Rect
 import android.util.DisplayMetrics
 import android.view.WindowManager
+import com.pdlbox.tools.Utils
 
 
 /**
@@ -95,9 +98,37 @@ object ScreenUtils {
         val statusBarHeight = frame.top
         val width: Int = getScreenWidth(activity)
         val height: Int = getScreenHeight(activity)
-        val bp: Bitmap? = Bitmap.createBitmap(bmp, 0, statusBarHeight, width, height
-                - statusBarHeight)
+        val bp: Bitmap? = Bitmap.createBitmap(
+            bmp, 0, statusBarHeight, width, height
+                    - statusBarHeight
+        )
         view.destroyDrawingCache()
         return bp
+    }
+
+    /**
+     * 获取屏幕方向
+     * @return ORIENTATION_LANDSCAPE  横向
+     * @return ORIENTATION_PORTRAIT   竖向
+     */
+    fun getScreenOrientation(): Int {
+        val orientation = Utils.getApp().resources.configuration.orientation
+        return orientation
+    }
+
+    /**
+     * 是否是横向
+     */
+    fun isLandscape(): Boolean {
+        val screenOrientation = getScreenOrientation()
+        return screenOrientation == ORIENTATION_LANDSCAPE
+    }
+
+    /**
+     * 是否是竖向
+     */
+    fun isPortrait(): Boolean {
+        val screenOrientation = getScreenOrientation()
+        return screenOrientation == ORIENTATION_PORTRAIT
     }
 }
