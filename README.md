@@ -197,6 +197,7 @@ closeKeybord                : 关闭软键盘
 ```
 isConnected                 : 判断网络是否连接
 isWifi                      : 判断是否是wifi连接
+isMobilNet                  : 判断是否是移动网络
 openSetting                 : 打开网络设置界面
 ```
 
@@ -237,4 +238,11 @@ getFirstSpell               : 汉字转换为汉语拼音首字母，英文字�
 getGson                     : 获取Gson对象
 toJson                      : 对象转json字符串
 fromJson                    : json字符串转对象
+```
+
+* ### 编码 相关 -> EncodeUtils.kt
+
+```
+encodeBase64                : base64编码
+decodeBase64                : base64解码
 ```
