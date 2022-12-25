@@ -44,4 +44,8 @@ class MainActivity : AppCompatActivity() {
         startActivity(Intent(this, ClipBoardTest::class.java))
     }
 
+    fun encodeTest(view: View) {
+        startActivity(Intent(this, EncodeTest::class.java))
+    }
+
 }

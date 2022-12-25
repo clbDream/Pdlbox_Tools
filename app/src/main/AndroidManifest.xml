@@ -30,6 +30,7 @@
         <activity android:name=".SpTest" />
         <activity android:name=".DeviceTest" />
         <activity android:name=".ClipBoardTest" />
+        <activity android:name=".EncodeTest" />
     </application>
 
 </manifest>
