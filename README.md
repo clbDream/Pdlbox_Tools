@@ -246,3 +246,20 @@ fromJson                    : json字符串转对象
 encodeBase64                : base64编码
 decodeBase64                : base64解码
 ```
+
+* ### 表情 相关 -> EmojiUtils.kt
+
+```
+containsEmoji               : 检测是否包含表情
+isEmojiCharacter            : 判断是否是表情字符
+```
+
+* ### 图片加载 相关 -> GlideUtils.kt
+
+```
+clearDiskCache              : 清理缓存
+showImg                     : 加载正常图片
+showRoundCornerImg          : 加载圆角图片(可指定圆角位置)
+showRoundImg                : 加载圆形图片
+showGigImg                  : 加载Gif动图
+```

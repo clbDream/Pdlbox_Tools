@@ -48,4 +48,8 @@ class MainActivity : AppCompatActivity() {
         startActivity(Intent(this, EncodeTest::class.java))
     }
 
+    fun glideTest(view: View) {
+        startActivity(Intent(this, GlideTest::class.java))
+    }
+
 }

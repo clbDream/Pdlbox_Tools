@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.clb.pdlbox">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -31,6 +33,7 @@
         <activity android:name=".DeviceTest" />
         <activity android:name=".ClipBoardTest" />
         <activity android:name=".EncodeTest" />
+        <activity android:name=".GlideTest" />
     </application>
 
 </manifest>
