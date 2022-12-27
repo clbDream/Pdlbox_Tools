@@ -42,7 +42,7 @@ class OkHttpFetcher internal constructor(
     }
 
     override fun onResponse(call: Call, response: Response) {
-        responseBody = response.body()
+        responseBody = response.body
         if (response.isSuccessful) {
             responseBody?.let {
                 val contentLength: Long = it.contentLength()
@@ -50,7 +50,7 @@ class OkHttpFetcher internal constructor(
             }
             dataCallback?.onDataReady(inputStream)
         } else {
-            dataCallback?.onLoadFailed(HttpException(response.message(), response.code()))
+            dataCallback?.onLoadFailed(HttpException(response.message, response.code))
         }
     }
 
