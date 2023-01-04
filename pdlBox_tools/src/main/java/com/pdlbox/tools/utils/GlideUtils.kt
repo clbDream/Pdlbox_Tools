@@ -1,10 +1,10 @@
 package com.pdlbox.tools.utils
 
 import android.widget.ImageView
+import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.pdlbox.tools.Utils
 import com.pdlbox.tools.glide.CornerTransform
-import com.pdlbox.tools.glide.GlideApp
 
 /**
  * Glide图片加载
@@ -18,7 +18,7 @@ object GlideUtils {
      */
     fun clearDiskCache() {
         // 必须在后台线程中调用，建议同时clearMemory()
-        GlideApp.get(Utils.getApp()).clearDiskCache()
+        Glide.get(Utils.getApp()).clearDiskCache()
     }
 
     /**
@@ -27,7 +27,7 @@ object GlideUtils {
      *
      */
     fun showImg(url: String, view: ImageView) {
-        GlideApp.with(Utils.getApp())
+        Glide.with(Utils.getApp())
             .load(url)
             .into(view)
     }
@@ -52,7 +52,7 @@ object GlideUtils {
         val options = RequestOptions
             .bitmapTransform(cornerTransform)
 
-        GlideApp.with(Utils.getApp())
+        Glide.with(Utils.getApp())
             .load(url)
             .apply(options)
             .into(view)
@@ -65,7 +65,7 @@ object GlideUtils {
      *
      */
     fun showRoundImg(url: String, view: ImageView) {
-        GlideApp.with(Utils.getApp())
+        Glide.with(Utils.getApp())
             .load(url)
             .apply(RequestOptions.circleCropTransform())
             .into(view)
@@ -77,7 +77,7 @@ object GlideUtils {
      *
      */
     fun showGigImg(url: String, view: ImageView) {
-        GlideApp.with(Utils.getApp())
+        Glide.with(Utils.getApp())
             .load(url)
             .into(view)
     }
