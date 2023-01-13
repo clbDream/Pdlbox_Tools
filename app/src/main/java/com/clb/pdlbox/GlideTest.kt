@@ -21,12 +21,7 @@ class GlideTest: AppCompatActivity() {
         setContentView(R.layout.activity_glide_test)
 
         iv1?.let { GlideUtils.showImg(testImg, it) }
-        iv2?.let { GlideUtils.showRoundCornerImg(testImg, it,10f,
-            leftTop = true,
-            rightTop = true,
-            leftBottom = true,
-            rightBottom = true
-        ) }
+        iv2?.let { GlideUtils.showRoundCornerImg(testImg, it,10f) }
         iv5?.let { GlideUtils.showRoundCornerImg(testImg, it,30f, leftBottom = true, rightTop = true) }
         iv3?.let { GlideUtils.showRoundImg(testImg, it) }
         iv4?.let { GlideUtils.showGigImg(gifImg, it) }

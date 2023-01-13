@@ -26,7 +26,7 @@ object GlideUtils {
      * 加载正常的图片
      *
      */
-    fun showImg(url: String, view: ImageView) {
+    fun showImg(url: Any, view: ImageView) {
         Glide.with(Utils.getApp())
             .load(url)
             .into(view)
@@ -38,7 +38,26 @@ object GlideUtils {
      *
      */
     fun showRoundCornerImg(
-        url: String,
+        url: Any,
+        view: ImageView,
+        radius: Float = 0f
+    ) {
+        showRoundCornerImg(
+            url, view, radius,
+            leftTop = true,
+            rightTop = true,
+            leftBottom = true,
+            rightBottom = true
+        )
+    }
+
+    /**
+     * *****************************
+     * 加载圆角图片
+     *
+     */
+    fun showRoundCornerImg(
+        url: Any,
         view: ImageView,
         radius: Float = 0f,
         leftTop: Boolean = false,
@@ -64,7 +83,7 @@ object GlideUtils {
      * 加载圆形图片
      *
      */
-    fun showRoundImg(url: String, view: ImageView) {
+    fun showRoundImg(url: Any, view: ImageView) {
         Glide.with(Utils.getApp())
             .load(url)
             .apply(RequestOptions.circleCropTransform())
@@ -76,7 +95,7 @@ object GlideUtils {
      * 加载gif图片
      *
      */
-    fun showGigImg(url: String, view: ImageView) {
+    fun showGigImg(url: Any, view: ImageView) {
         Glide.with(Utils.getApp())
             .load(url)
             .into(view)
