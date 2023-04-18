@@ -26,10 +26,12 @@ object GlideUtils {
      * 加载正常的图片
      *
      */
-    fun showImg(url: Any, view: ImageView) {
-        Glide.with(Utils.getApp())
-            .load(url)
-            .into(view)
+    fun showImg(url: Any?, view: ImageView?) {
+        if (view != null) {
+            Glide.with(Utils.getApp())
+                .load(url)
+                .into(view)
+        }
     }
 
     /**
@@ -38,8 +40,8 @@ object GlideUtils {
      *
      */
     fun showRoundCornerImg(
-        url: Any,
-        view: ImageView,
+        url: Any?,
+        view: ImageView?,
         radius: Float = 0f
     ) {
         showRoundCornerImg(
@@ -57,8 +59,8 @@ object GlideUtils {
      *
      */
     fun showRoundCornerImg(
-        url: Any,
-        view: ImageView,
+        url: Any?,
+        view: ImageView?,
         radius: Float = 0f,
         leftTop: Boolean = false,
         rightTop: Boolean = false,
@@ -71,10 +73,12 @@ object GlideUtils {
         val options = RequestOptions
             .bitmapTransform(cornerTransform)
 
-        Glide.with(Utils.getApp())
-            .load(url)
-            .apply(options)
-            .into(view)
+        if (view != null) {
+            Glide.with(Utils.getApp())
+                .load(url)
+                .apply(options)
+                .into(view)
+        }
     }
 
 
@@ -83,11 +87,13 @@ object GlideUtils {
      * 加载圆形图片
      *
      */
-    fun showRoundImg(url: Any, view: ImageView) {
-        Glide.with(Utils.getApp())
-            .load(url)
-            .apply(RequestOptions.circleCropTransform())
-            .into(view)
+    fun showRoundImg(url: Any?, view: ImageView?) {
+        if (view != null) {
+            Glide.with(Utils.getApp())
+                .load(url)
+                .apply(RequestOptions.circleCropTransform())
+                .into(view)
+        }
     }
 
     /**
@@ -95,10 +101,12 @@ object GlideUtils {
      * 加载gif图片
      *
      */
-    fun showGigImg(url: Any, view: ImageView) {
-        Glide.with(Utils.getApp())
-            .load(url)
-            .into(view)
+    fun showGigImg(url: Any?, view: ImageView?) {
+        if (view != null) {
+            Glide.with(Utils.getApp())
+                .load(url)
+                .into(view)
+        }
     }
 
 }
