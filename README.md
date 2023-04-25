@@ -85,15 +85,17 @@ sp2px, px2sp               : sp 与 px 转换
 * ### 字符串 相关 -> StringUtils.kt
 
 ```
-isEmpty                    : 判断内容是否为空
-isBlank                    : 判断内容是否为空或空格
-equalsIgnoreCase           : 判断str1和str2是否相同(不区分大小写)
-contains                   : 判断字符串str1是否包含字符串str2
-toLowerCase                : 将给定字符串中给定的区域的字符转换成小写
-toUpperCase                : 将给定字符串中给定的区域的字符转换成大写
-firstLetterToLowerCase     : 将给定字符串的首字母转为小写
-firstLetterToUpperCase     : 将给定字符串的首字母转为大写
-replace                    : 替换字符串中指定字符
+isEmpty                                   : 判断内容是否为空
+isBlank                                   : 判断内容是否为空或空格
+equalsIgnoreCase                          : 判断str1和str2是否相同(不区分大小写)
+contains                                  : 判断字符串str1是否包含字符串str2
+toLowerCase                               : 将给定字符串中给定的区域的字符转换成小写
+toUpperCase                               : 将给定字符串中给定的区域的字符转换成大写
+firstLetterToLowerCase                    : 将给定字符串的首字母转为小写
+firstLetterToUpperCase                    : 将给定字符串的首字母转为大写
+replace                                   : 替换字符串中指定字符
+generateRandomStrNumberAndLetter          : 随机生成指定长度的字符串(数字加字母)
+generateRandomStrChinese                  : 随机生成指定长度的字符串(中文)
 ```
 
 * ### 尺寸 相关 -> SizeUtils.kt
@@ -262,4 +264,10 @@ showImg                     : 加载正常图片
 showRoundCornerImg          : 加载圆角图片(可指定圆角位置)
 showRoundImg                : 加载圆形图片
 showGigImg                  : 加载Gif动图
+```
+
+* ### 手机号码相关 相关 -> PhoneUtils.kt
+
+```
+phoneNumberHide              : 手机号隐藏部分号码(非手机号原样返回）
 ```

@@ -47,4 +47,8 @@ class MainActivity : AppCompatActivity() {
         startActivity(Intent(this, GlideTest::class.java))
     }
 
+    fun stringTest(view: View) {
+        startActivity(Intent(this, StringTest::class.java))
+    }
+
 }

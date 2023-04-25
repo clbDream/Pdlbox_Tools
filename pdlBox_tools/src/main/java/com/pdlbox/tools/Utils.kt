@@ -3,6 +3,7 @@ package com.pdlbox.tools
 import android.annotation.SuppressLint
 import android.app.Application
 import android.util.Log
+import com.pdlbox.tools.utils.StringUtils
 
 
 /**
@@ -22,12 +23,15 @@ object Utils {
             sApp = app
             UtilsBridge.init(sApp!!)
             UtilsBridge.preLoad()
-            return;
+        }else {
+            if (sApp?.equals(app) == true) return
+            UtilsBridge.unInit(sApp!!);
+            sApp = app
+            UtilsBridge.init(sApp!!)
         }
-        if (sApp?.equals(app)==true) return
-        UtilsBridge.unInit(sApp!!);
-        sApp = app
-        UtilsBridge.init(sApp!!)
+
+        //初始化字符串类
+        StringUtils.init()
     }
 
     fun getApp(): Application {

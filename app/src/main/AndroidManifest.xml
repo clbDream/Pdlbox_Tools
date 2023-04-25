@@ -34,6 +34,7 @@
         <activity android:name=".ClipBoardTest" />
         <activity android:name=".EncodeTest" />
         <activity android:name=".GlideTest" />
+        <activity android:name=".StringTest" />
     </application>
 
 </manifest>
