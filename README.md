@@ -271,3 +271,11 @@ showGigImg                  : 加载Gif动图
 ```
 phoneNumberHide              : 手机号隐藏部分号码(非手机号原样返回）
 ```
+
+* ### 数字格式化 相关 -> NumberFormatUtils.kt
+
+```
+numberFormat                  : 数字格式化(保留1位小数）
+keepTwoDecimalPlaces          : 保留两位小数(去掉最后的0）
+customDecimalPlaces           : 自定义小数位数
+```

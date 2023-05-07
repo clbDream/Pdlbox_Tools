@@ -34,6 +34,13 @@ object NumberFormatUtils {
      * 保留两位小数(去掉最后的0）
      */
     fun keepTwoDecimalPlaces(number: String?): String {
+        return customDecimalPlaces(number, 2)
+    }
+
+    /**
+     * 自定义小数位数
+     */
+    fun customDecimalPlaces(number: String?, size: Int): String {
         try {
             var number = number ?: return ""
             if (number.indexOf(".") > 0) {
@@ -43,7 +50,7 @@ object NumberFormatUtils {
             }
             return if (number.indexOf(".") > 0) {
                 val b = BigDecimal(number)
-                b.setScale(2, BigDecimal.ROUND_HALF_UP).toDouble().toString()
+                b.setScale(size, BigDecimal.ROUND_HALF_UP).toDouble().toString()
             } else {
                 number
             }

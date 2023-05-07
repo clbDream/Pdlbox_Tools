@@ -13,7 +13,7 @@ import org.junit.Test
 class NumberFormatTest {
 
     @Test
-    fun testNumberFormat(){
+    fun testNumberFormat() {
         Assert.assertEquals("1.9k", NumberFormatUtils.numberFormat(1999))
         Assert.assertEquals("1.0w", NumberFormatUtils.numberFormat(10000))
         Assert.assertEquals("9.9k", NumberFormatUtils.numberFormat(9999))
@@ -21,9 +21,16 @@ class NumberFormatTest {
     }
 
     @Test
-    fun keepTwoDecimalPlacesTest(){
-        Assert.assertEquals("10.59",NumberFormatUtils.keepTwoDecimalPlaces("10.59254"))
-        Assert.assertEquals("10.6",NumberFormatUtils.keepTwoDecimalPlaces("10.596"))
-        Assert.assertEquals("0",NumberFormatUtils.keepTwoDecimalPlaces("10.596as"))
+    fun keepTwoDecimalPlacesTest() {
+        Assert.assertEquals("10.59", NumberFormatUtils.keepTwoDecimalPlaces("10.59254"))
+        Assert.assertEquals("10.6", NumberFormatUtils.keepTwoDecimalPlaces("10.596"))
+        Assert.assertEquals("0", NumberFormatUtils.keepTwoDecimalPlaces("10.596as"))
+    }
+
+
+    @Test
+    fun customDecimalPlaces() {
+        Assert.assertEquals("10.6", NumberFormatUtils.customDecimalPlaces("10.567", 1))
+        Assert.assertEquals("10.4", NumberFormatUtils.customDecimalPlaces("10.447", 1))
     }
 }
