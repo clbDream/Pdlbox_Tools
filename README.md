@@ -279,3 +279,10 @@ numberFormat                  : 数字格式化(保留1位小数）
 keepTwoDecimalPlaces          : 保留两位小数(去掉最后的0）
 customDecimalPlaces           : 自定义小数位数
 ```
+
+* ### 生日工具类 相关 -> BirthdayUtils.kt
+
+```
+calculateTheConstellations    : 计算星座
+calculateAge                  : 计算年龄
+```
