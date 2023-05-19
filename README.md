@@ -286,3 +286,12 @@ customDecimalPlaces           : 自定义小数位数
 calculateTheConstellations    : 计算星座
 calculateAge                  : 计算年龄
 ```
+
+### 消息订阅 相关 -> LiveDataBus.kt
+
+```
+subscribe                     : 订阅
+unregister                    : 接触订阅
+postValue                     : 推送消息
+setValue                      : 推送消息
+```
