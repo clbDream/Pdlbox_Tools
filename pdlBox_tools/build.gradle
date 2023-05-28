@@ -53,4 +53,7 @@ dependencies {
 
     // liveData
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.2.0"
+
+    //LOGGER https://github.com/orhanobut/logger
+    implementation 'com.orhanobut:logger:2.2.0'
 }

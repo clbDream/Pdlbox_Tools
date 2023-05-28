@@ -3,6 +3,8 @@ package com.pdlbox.tools
 import android.annotation.SuppressLint
 import android.app.Application
 import android.util.Log
+import com.orhanobut.logger.AndroidLogAdapter
+import com.orhanobut.logger.Logger
 import com.pdlbox.tools.utils.StringUtils
 
 
@@ -32,6 +34,12 @@ object Utils {
 
         //初始化字符串类
         StringUtils.init()
+
+        Logger.addLogAdapter(object :AndroidLogAdapter(){
+            override fun isLoggable(priority: Int, tag: String?): Boolean {
+                return BuildConfig.DEBUG
+            }
+        })
     }
 
     fun getApp(): Application {
