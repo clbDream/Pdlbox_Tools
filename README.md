@@ -295,3 +295,11 @@ unregister                    : 接触订阅
 postValue                     : 推送消息
 setValue                      : 推送消息
 ```
+
+### 网页工具 相关 -> HtmlUtils.kt
+
+```
+getImgStr                     : 解析富文本里面的图片工具类
+getImgStr2                    : 解析富文本里面的图片工具类
+richTextExtractsPlainText     : 富文本提取纯文本
+```
