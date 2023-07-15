@@ -303,3 +303,19 @@ getImgStr                     : 解析富文本里面的图片工具类
 getImgStr2                    : 解析富文本里面的图片工具类
 richTextExtractsPlainText     : 富文本提取纯文本
 ```
+
+### 定位工具 相关（摘抄自Blankj的工具库） -> LocationUtils.kt
+
+```
+isGpsEnabled                  : 判断 Gps 是否可用
+isLocationEnabled             : 判断定位是否可用
+openGpsSettings               : 打开 Gps 设置界面
+register                      : 注册
+unregister                    : 注销
+getAddress                    : 根据经纬度获取地理位置
+getCountryName                : 根据经纬度获取所在国家
+getLocality                   : 根据经纬度获取所在地
+getStreet                     : 根据经纬度获取所在街道
+isBetterLocation              : 是否更好的位置
+isSameProvider                : 是否相同的提供者
+```
