@@ -60,4 +60,16 @@ object DistanceUtils {
     fun kilometerToMeter(distanceValue: Long): Long {
         return distanceValue * 1000
     }
+
+    /**
+     * 距离格式化
+     */
+    fun distanceFormat(distance:Long): String {
+        val distanceStr = if (distance < 1000) {
+            "${distance}m"
+        } else {
+            "${metersToKilometers(distance)}km"
+        }
+        return distanceStr
+    }
 }

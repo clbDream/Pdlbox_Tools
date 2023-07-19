@@ -132,6 +132,7 @@ decimeterToM                 : 分米转米
 mToDecimeter                 : 米转分米
 metersToKilometers           : 米转千米
 kilometerToMeter             : 千米转米
+distanceFormat               : 距离格式化
 ```
 
 * ### Toast 相关 -> ToastUtils.kt
